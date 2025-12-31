@@ -63,23 +63,6 @@
     background: rgba(0, 0, 0, 0.03);
 }
 
-/* Fix for invisible text in light mode */
-[data-theme="light"] .t-title,
-[data-theme="light"] .acc-name,
-[data-theme="light"] table td,
-[data-theme="light"] table th,
-[data-theme="light"] .sidebar-item,
-[data-theme="light"] .glass-panel h3,
-[data-theme="light"] .glass-panel h1 {
-    color: #000000 !important;
-}
-
-[data-theme="light"] .t-meta,
-[data-theme="light"] .acc-type {
-    color: #4a4a4a !important;
-    /* Slightly lighter for secondary text */
-}
-
 [data-theme="light"] .modal-content {
     background: #fff;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -764,8 +747,7 @@ h1 {
 /* Transactions List */
 /* Transactions List */
 .transactions-list-wrapper {
-    height: auto;
-    max-height: 500px;
+    height: 350px;
     /* Fixed height */
     overflow-y: auto;
     /* Show scrollbar only when needed */
@@ -1493,16 +1475,6 @@ h1 {
 
 .date-picker-styled:hover::-webkit-calendar-picker-indicator {
     opacity: 1;
-}
-
-.date-picker-styled option {
-    background-color: var(--bg-dark);
-    color: var(--text-primary);
-}
-
-[data-theme="light"] .date-picker-styled option {
-    background-color: #ffffff;
-    color: #000000;
 }
 
 /* Keep canvas wrappers */
